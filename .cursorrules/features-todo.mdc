@@ -3,40 +3,39 @@
 ## Phase 1: Project Setup & Configuration
 
 ### 1.1 Initial Setup
-- [ ] Initialize Vite + React + TypeScript project
-- [ ] Configure TypeScript (strict mode)
-- [ ] Setup ESLint and Prettier
-- [ ] Configure Git repository
-- [ ] Create .gitignore file
-- [ ] Setup environment variables (.env.example)
+- [x] Initialize Vite + React + TypeScript project
+- [x] Configure TypeScript (strict mode)
+- [x] Setup ESLint and Prettier
+- [x] Configure Git repository
+- [x] Create .gitignore file
+- [x] Setup environment variables (.env.example)
 
 ### 1.2 Dependencies Installation
-- [ ] Install React Router DOM
-- [ ] Install Zustand
-- [ ] Install Zod
-- [ ] Install Tailwind CSS
-- [ ] Install shadcn/ui CLI
-- [ ] Install OAuth libraries (@react-oauth/google)
-- [ ] Install additional utilities (date-fns, axios, etc.)
+- [x] Install React Router DOM
+- [x] Install Zustand
+- [x] Install Zod
+- [x] Install Tailwind CSS (v4)
+- [x] ~~Install shadcn/ui CLI~~ (Not using shadcn/ui)
+- [x] Install OAuth libraries (@react-oauth/google)
+- [x] Install additional utilities (date-fns, axios, etc.)
 
 ### 1.3 Project Structure
-- [ ] Create folder structure (components, pages, stores, hooks, services, types, utils)
-- [ ] Setup path aliases in tsconfig.json
-- [ ] Configure Tailwind CSS
-- [ ] Setup shadcn/ui components directory
+- [x] Create folder structure (components, pages, stores, hooks, services, types, utils)
+- [x] Setup path aliases in tsconfig.json
+- [x] Configure Tailwind CSS (v4 with Vite plugin)
 
 ## Phase 2: Core UI Setup
 
-### 2.1 shadcn/ui Components
-- [ ] Install Button component
-- [ ] Install Input component
-- [ ] Install Card component
-- [ ] Install Dialog/Modal component
-- [ ] Install Select component
-- [ ] Install Tabs component
-- [ ] Install Badge component
-- [ ] Install Toast/Alert component
-- [ ] Install Skeleton component (for loading states)
+### 2.1 Custom UI Components
+- [ ] Create Button component
+- [ ] Create Input component
+- [ ] Create Card component
+- [ ] Create Dialog/Modal component
+- [ ] Create Select component
+- [ ] Create Tabs component
+- [ ] Create Badge component
+- [ ] Create Toast/Alert component
+- [ ] Create Skeleton component (for loading states)
 
 ### 2.2 Layout Components
 - [ ] Create Header component
