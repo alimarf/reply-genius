@@ -27,15 +27,15 @@
 ## Phase 2: Core UI Setup
 
 ### 2.1 Custom UI Components
-- [ ] Create Button component
-- [ ] Create Input component
-- [ ] Create Card component
-- [ ] Create Dialog/Modal component
-- [ ] Create Select component
-- [ ] Create Tabs component
-- [ ] Create Badge component
-- [ ] Create Toast/Alert component
-- [ ] Create Skeleton component (for loading states)
+- [x] Create Button component
+- [x] Create Input component
+- [x] Create Card component
+- [x] Create Dialog/Modal component
+- [x] Create Select component
+- [x] Create Tabs component
+- [x] Create Badge component
+- [x] Create Toast/Alert component
+- [x] Create Skeleton component (for loading states)
 
 ### 2.2 Layout Components
 - [ ] Create Header component
