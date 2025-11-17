@@ -1,0 +1,145 @@
+# Architecture & Tech Stack
+
+## Frontend Stack
+
+### Core Framework
+- **React 18+**: Modern UI library with hooks and concurrent features
+- **Vite**: Fast build tool for development and production
+- **TypeScript**: Type safety to reduce bugs and improve developer experience
+
+### State Management
+- **Zustand**: Lightweight state management library
+  - Simple API, no boilerplate like Redux
+  - Perfect for medium-sized applications
+  - Supports middleware for persistence
+
+### Form Validation & Schema
+- **Zod**: TypeScript-first schema validation
+  - Runtime type checking
+  - Form validation
+  - Type inference from schema
+
+### UI Components
+- **shadcn/ui**: High-quality component library built on Radix UI
+  - Copy-paste components (not an npm package)
+  - Fully customizable
+  - Accessible by default
+  - Built on Tailwind CSS
+
+### Authentication
+- **OAuth 2.0**: Google OAuth for Gmail login
+  - React OAuth libraries (e.g., @react-oauth/google)
+  - Secure token management
+  - Session handling
+
+### Styling
+- **Tailwind CSS**: Utility-first CSS framework
+  - Fast development
+  - Consistent design system
+  - Responsive utilities
+
+### Additional Libraries
+- **React Router**: Client-side routing
+- **Axios/Fetch**: HTTP client for API calls
+- **React Hook Form**: Form handling (optional, can use native)
+- **date-fns**: Date manipulation for history timestamps
+
+## Project Structure
+
+```
+reply-genius/
+├── public/
+│   └── assets/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── ui/             # shadcn components
+│   │   ├── layout/         # Layout components (Header, Footer, etc)
+│   │   └── features/       # Feature-specific components
+│   ├── pages/              # Page components
+│   │   ├── LandingPage.tsx
+│   │   ├── GeneratorPage.tsx
+│   │   └── HistoryPage.tsx
+│   ├── stores/             # Zustand stores
+│   │   ├── authStore.ts
+│   │   ├── generatorStore.ts
+│   │   └── historyStore.ts
+│   ├── hooks/              # Custom React hooks
+│   ├── services/           # API services
+│   │   ├── api.ts
+│   │   └── authService.ts
+│   ├── types/              # TypeScript types
+│   │   ├── auth.types.ts
+│   │   ├── generator.types.ts
+│   │   └── api.types.ts
+│   ├── utils/              # Utility functions
+│   │   ├── validators.ts   # Zod schemas
+│   │   └── helpers.ts
+│   ├── constants/          # Constants
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .cursorrules/
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── tailwind.config.js
+```
+
+## State Management Strategy
+
+### Zustand Stores
+
+1. **authStore**
+   - User authentication state
+   - OAuth token management
+   - User profile data
+   - Usage limits tracking
+
+2. **generatorStore**
+   - Current email input
+   - Selected tone
+   - Generated replies
+   - Loading states
+
+3. **historyStore**
+   - Chat history
+   - Local storage persistence (guest)
+   - API sync (authenticated)
+
+## API Integration Strategy
+
+- **Base URL**: Environment variable for API endpoint
+- **Error Handling**: Centralized error handling with try-catch
+- **Loading States**: Loading indicators for better UX
+- **Retry Logic**: Automatic retry for failed requests
+- **Token Refresh**: Automatic token refresh for OAuth
+
+## Environment Variables
+
+```env
+VITE_API_BASE_URL=
+VITE_GOOGLE_CLIENT_ID=
+VITE_GOOGLE_CLIENT_SECRET=
+VITE_APP_ENV=development
+```
+
+## Deployment
+
+- **Platform**: Vercel
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Node Version**: 18.x or higher
+
+## Best Practices
+
+1. **Component Organization**: Feature-based folder structure
+2. **Type Safety**: Strict TypeScript configuration
+3. **Code Splitting**: Lazy loading for routes
+4. **Performance**: Memoization for expensive computations
+5. **Accessibility**: ARIA labels and keyboard navigation
+6. **Error Boundaries**: Catch and display errors gracefully
+7. **Loading States**: Skeleton screens or spinners
+8. **Responsive Design**: Mobile-first approach

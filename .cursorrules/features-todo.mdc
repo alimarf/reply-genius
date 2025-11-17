@@ -1,0 +1,274 @@
+# Features & Todo List
+
+## Phase 1: Project Setup & Configuration
+
+### 1.1 Initial Setup
+- [ ] Initialize Vite + React + TypeScript project
+- [ ] Configure TypeScript (strict mode)
+- [ ] Setup ESLint and Prettier
+- [ ] Configure Git repository
+- [ ] Create .gitignore file
+- [ ] Setup environment variables (.env.example)
+
+### 1.2 Dependencies Installation
+- [ ] Install React Router DOM
+- [ ] Install Zustand
+- [ ] Install Zod
+- [ ] Install Tailwind CSS
+- [ ] Install shadcn/ui CLI
+- [ ] Install OAuth libraries (@react-oauth/google)
+- [ ] Install additional utilities (date-fns, axios, etc.)
+
+### 1.3 Project Structure
+- [ ] Create folder structure (components, pages, stores, hooks, services, types, utils)
+- [ ] Setup path aliases in tsconfig.json
+- [ ] Configure Tailwind CSS
+- [ ] Setup shadcn/ui components directory
+
+## Phase 2: Core UI Setup
+
+### 2.1 shadcn/ui Components
+- [ ] Install Button component
+- [ ] Install Input component
+- [ ] Install Card component
+- [ ] Install Dialog/Modal component
+- [ ] Install Select component
+- [ ] Install Tabs component
+- [ ] Install Badge component
+- [ ] Install Toast/Alert component
+- [ ] Install Skeleton component (for loading states)
+
+### 2.2 Layout Components
+- [ ] Create Header component
+- [ ] Create Footer component
+- [ ] Create MainLayout wrapper
+- [ ] Create Navigation component
+- [ ] Setup responsive navigation (mobile menu)
+
+### 2.3 Styling & Theme
+- [ ] Configure Tailwind theme colors
+- [ ] Setup dark mode (optional)
+- [ ] Create global styles
+- [ ] Setup typography system
+
+## Phase 3: Authentication System
+
+### 3.1 OAuth Setup
+- [ ] Create Google OAuth credentials
+- [ ] Setup OAuth provider in app
+- [ ] Create authService for API calls
+- [ ] Create authStore (Zustand)
+- [ ] Implement login flow
+- [ ] Implement logout flow
+- [ ] Handle token refresh
+
+### 3.2 Auth Components
+- [ ] Create LoginButton component
+- [ ] Create UserProfile component
+- [ ] Create AuthGuard component (protected routes)
+- [ ] Create GuestMode indicator
+
+### 3.3 Usage Limits
+- [ ] Implement guest usage counter (localStorage)
+- [ ] Implement authenticated usage counter (API)
+- [ ] Create usage limit display component
+- [ ] Handle limit exceeded scenarios
+
+## Phase 4: Landing Page
+
+### 4.1 Hero Section
+- [ ] Design hero section with headline
+- [ ] Add value proposition
+- [ ] Create CTA buttons
+- [ ] Add hero image/illustration
+
+### 4.2 Problem & Solution Section
+- [ ] Create problem statement section
+- [ ] Create solution explanation
+- [ ] Add visual elements (icons, illustrations)
+
+### 4.3 How It Works Section
+- [ ] Create step-by-step guide (3-4 steps)
+- [ ] Add visual flow diagram
+- [ ] Make it interactive (optional)
+
+### 4.4 Common Mistakes Section
+- [ ] List common user problems
+- [ ] Show how product solves each problem
+- [ ] Add before/after examples
+
+### 4.5 Features Showcase
+- [ ] Display key features
+- [ ] Add feature icons/illustrations
+- [ ] Highlight benefits
+
+### 4.6 Footer & CTA
+- [ ] Create footer with links
+- [ ] Add final CTA section
+- [ ] Add social links (optional)
+
+## Phase 5: Email Generator Feature
+
+### 5.1 Generator Page Layout
+- [ ] Create GeneratorPage component
+- [ ] Design input area (ChatGPT-like)
+- [ ] Create output display area
+- [ ] Add tone selector UI
+
+### 5.2 Input Component
+- [ ] Create textarea component (auto-resize)
+- [ ] Add character counter
+- [ ] Add placeholder text
+- [ ] Implement input validation (Zod)
+
+### 5.3 Tone Selector
+- [ ] Create tone selection UI (radio/buttons)
+- [ ] Add tone descriptions
+- [ ] Show selected tone indicator
+- [ ] Allow tone change after generation
+
+### 5.4 Generation Logic
+- [ ] Create generatorStore (Zustand)
+- [ ] Implement generate function
+- [ ] Handle loading states
+- [ ] Handle error states
+- [ ] Display generated replies
+
+### 5.5 Reply Display
+- [ ] Create ReplyCard component
+- [ ] Display 3 reply options
+- [ ] Add copy to clipboard button
+- [ ] Add edit option (optional)
+- [ ] Add regenerate option
+
+### 5.6 API Integration
+- [ ] Create API service for generation
+- [ ] Setup request/response types
+- [ ] Handle API errors
+- [ ] Add retry logic
+
+## Phase 6: History Feature
+
+### 6.1 History Store
+- [ ] Create historyStore (Zustand)
+- [ ] Implement localStorage for guest
+- [ ] Implement API sync for authenticated
+- [ ] Add history CRUD operations
+
+### 6.2 History Page
+- [ ] Create HistoryPage component
+- [ ] Display list of past generations
+- [ ] Add search/filter functionality
+- [ ] Add pagination (if needed)
+- [ ] Show date/time stamps
+
+### 6.3 History Item
+- [ ] Create HistoryItem component
+- [ ] Display original email
+- [ ] Display generated replies
+- [ ] Add view details action
+- [ ] Add delete action
+- [ ] Add regenerate action
+
+### 6.4 History Integration
+- [ ] Save to history after generation
+- [ ] Update usage counter
+- [ ] Sync with backend (authenticated users)
+
+## Phase 7: User Experience Enhancements
+
+### 7.1 Loading States
+- [ ] Add skeleton loaders
+- [ ] Add progress indicators
+- [ ] Add loading animations
+
+### 7.2 Error Handling
+- [ ] Create ErrorBoundary component
+- [ ] Display user-friendly error messages
+- [ ] Add retry mechanisms
+- [ ] Handle network errors
+
+### 7.3 Toast Notifications
+- [ ] Setup toast system
+- [ ] Success notifications
+- [ ] Error notifications
+- [ ] Info notifications
+
+### 7.4 Responsive Design
+- [ ] Test mobile layout
+- [ ] Test tablet layout
+- [ ] Test desktop layout
+- [ ] Fix responsive issues
+
+### 7.5 Accessibility
+- [ ] Add ARIA labels
+- [ ] Keyboard navigation
+- [ ] Focus management
+- [ ] Screen reader support
+
+## Phase 8: Testing & Optimization
+
+### 8.1 Performance
+- [ ] Code splitting
+- [ ] Lazy loading routes
+- [ ] Image optimization
+- [ ] Bundle size optimization
+
+### 8.2 Testing
+- [ ] Test all user flows
+- [ ] Test error scenarios
+- [ ] Test edge cases
+- [ ] Cross-browser testing
+
+### 8.3 SEO (Optional)
+- [ ] Add meta tags
+- [ ] Add Open Graph tags
+- [ ] Add structured data
+- [ ] Sitemap generation
+
+## Phase 9: Deployment
+
+### 9.1 Pre-Deployment
+- [ ] Final code review
+- [ ] Update environment variables
+- [ ] Build production bundle
+- [ ] Test production build locally
+
+### 9.2 Vercel Setup
+- [ ] Create Vercel account
+- [ ] Connect GitHub repository
+- [ ] Configure build settings
+- [ ] Setup environment variables in Vercel
+- [ ] Configure custom domain (optional)
+
+### 9.3 Deployment
+- [ ] Deploy to Vercel
+- [ ] Test deployed application
+- [ ] Verify all features work
+- [ ] Check performance metrics
+
+### 9.4 Post-Deployment
+- [ ] Setup monitoring (optional)
+- [ ] Setup analytics (optional)
+- [ ] Document deployment process
+- [ ] Create backup strategy
+
+## Phase 10: Documentation
+
+### 10.1 Code Documentation
+- [ ] Add JSDoc comments
+- [ ] Document complex functions
+- [ ] Document component props
+- [ ] Create README.md
+
+### 10.2 User Documentation
+- [ ] Create user guide
+- [ ] Add FAQ section
+- [ ] Create video tutorial (optional)
+
+## Notes
+
+- **Priority**: Focus on Phase 1-6 first for MVP
+- **Backend Integration**: Will be added later, use mock data for now
+- **Iterative Development**: Build and test incrementally
+- **Code Reviews**: Review code at each phase completion

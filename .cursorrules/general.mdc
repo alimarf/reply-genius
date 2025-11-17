@@ -1,0 +1,73 @@
+# ReplyGenius - Product Overview
+
+## Product Description
+
+ReplyGenius is a web application that helps users generate professional and contextually appropriate email replies using AI. The application analyzes incoming emails and generates 3 reply options with different tones (formal, casual, or decline) that users can choose from.
+
+## Core Features
+
+### 1. Landing Page
+- **Purpose**: Explain the product in detail with compelling copywriting
+- **Sections**:
+  - Hero section with clear value proposition
+  - Problem statement (user pain points)
+  - Solution explanation (how the product solves problems)
+  - "How It Works" section with step-by-step visuals
+  - Common mistakes section (common user problems and solutions)
+  - Features showcase
+  - Call-to-action (CTA) to start using
+
+### 2. Email Reply Generation
+- **Input**: ChatGPT-like text input to enter the email to reply to
+- **Output**: 3 reply options with different tones:
+  - **Formal**: Professional and official language
+  - **Casual**: Relaxed and friendly language
+  - **Decline**: Polite and professional rejection
+- **Tone Selector**: Users can select tone before generation or change tone after generation
+
+### 3. History & Chat Management
+- **Chat History**: Save all generated replies
+- **History View**: List of all previous conversations/generations
+- **Re-generate**: Ability to regenerate with different tones
+
+### 4. Authentication & Usage Limits
+- **Guest Mode**:
+  - No login required
+  - Can generate up to 3 times
+  - History not permanently saved (localStorage)
+  
+- **Gmail OAuth Login**:
+  - Login using Google OAuth
+  - Can generate 10 times per week
+  - History saved in cloud
+  - Limit resets every week
+
+### 5. User Experience
+- **Simple but Attractive UI**: Minimalist yet appealing design
+- **Responsive Design**: Works well on desktop and mobile
+- **Real-time Generation**: Feedback while AI is generating
+- **Copy to Clipboard**: Easy copy of generated results to clipboard
+
+## Common User Problems & Solutions
+
+### Problem 1: Writing Email Replies Takes Too Much Time
+**Solution**: AI generates 3 options in seconds, users just need to choose and edit if needed
+
+### Problem 2: Confused About Choosing the Right Tone
+**Solution**: Tone selector with preview, users can try various tones and choose the most appropriate one
+
+### Problem 3: Email Replies Too Formal or Too Casual
+**Solution**: 3 options with different tones allow users to choose the most appropriate one for the context
+
+### Problem 4: Forgot Previous Email Context
+**Solution**: Chat history allows users to view all previous generations
+
+### Problem 5: Unsure How to Decline Politely
+**Solution**: Special "Decline" tone to help write professional and polite rejections
+
+## Target Users
+
+- Professionals who receive many emails
+- Freelancers who need quick replies
+- Business owners who want to increase productivity
+- Anyone who wants to improve email communication quality
